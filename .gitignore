@@ -1,7 +1,7 @@
-*.md
 *.pdf
 bundle
 .bundle
 Gemfile.lock
 .DS_Store
 .rvmrc
+
