@@ -4,4 +4,4 @@ bundle
 Gemfile.lock
 .DS_Store
 .rvmrc
-
+outputs

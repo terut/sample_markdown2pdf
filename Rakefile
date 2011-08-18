@@ -11,7 +11,7 @@ task :md2pdf do |t, args|
   file_path = args.file_path
 
   md = File.open(file_path, 'r')
-  options = [:hard_wrap, :filter_html, :autolink, :no_intraemphasis, :fenced_code, :gh_blockcode]
+  options = [:hard_wrap, :filter_html, :autolink, :no_intraemphasis, :fenced_code, :gh_blockcode, :tables]
   html = Redcarpet.new(md.read, *options).to_html
   kit = PDFKit.new(html)
   kit.stylesheets << 'markdown.css'
